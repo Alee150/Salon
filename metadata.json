@@ -1,0 +1,6 @@
+{
+  "name": "Waqt AlSaada Beauty Salon",
+  "description": "Ladies beauty salon on Lulu Hypermarket street in Muwaileh Commercial, Sharjah. Book hair, nails, facials, waxing, threading, bridal makeup, or home service on WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

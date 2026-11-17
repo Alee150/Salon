@@ -1,0 +1,2268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waqt AlSaada Beauty Salon — Ladies Salon in Muwaileh, Sharjah</title>
+  <meta name="description" content="Ladies beauty salon on Lulu Hypermarket street in Muwaileh Commercial, Sharjah. Book hair, nails, facials, waxing, threading, bridal makeup, or home service on WhatsApp." />
+  <meta property="og:title" content="Waqt AlSaada Beauty Salon — Ladies Salon in Muwaileh, Sharjah" />
+  <meta property="og:description" content="Ladies beauty salon on Lulu Hypermarket street in Muwaileh Commercial, Sharjah. Book hair, nails, facials, waxing, threading, bridal makeup, or home service on WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#FBF8F4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ivory: #FBF8F4;
+      --linen: #F4EEE6;
+      --plum: #3B1F2B;
+      --plum-soft: #634552;
+      --plum-deep: #29141D;
+      --rose: #C08497;
+      --rose-hover: #B27286;
+      --sand: #E8D9C5;
+      --sand-strong: #D9C4AA;
+      --error: #9B2C3E;
+      --error-bg: #FAF0F2;
+
+      --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+      --font-sans: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+      --max-w: 1120px;
+      --gutter: 18px;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--ivory);
+      color: var(--plum);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      padding-bottom: 66px;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--plum);
+      outline-offset: 2px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding-inline: 36px;
+      }
+    }
+
+    .tabular {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      * {
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 11px 22px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background-color 180ms var(--ease-out), border-color 180ms var(--ease-out), transform 180ms var(--ease-out), color 180ms var(--ease-out);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-primary {
+      background-color: var(--plum);
+      color: var(--ivory);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--plum-deep);
+    }
+
+    .btn-rose {
+      background-color: var(--rose);
+      color: var(--plum-deep);
+      font-weight: 500;
+    }
+
+    .btn-rose:hover {
+      background-color: var(--rose-hover);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border-color: var(--sand-strong);
+      color: var(--plum);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--plum);
+      background-color: var(--linen);
+    }
+
+    /* 1. Sticky Top Bar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background-color: rgba(251, 248, 244, 0.96);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 52px;
+      padding-block: 7px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-wordmark {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      color: var(--plum);
+      white-space: nowrap;
+    }
+
+    .brand-subline {
+      font-size: 11px;
+      line-height: 1.25;
+      color: var(--plum-soft);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @media (min-width: 640px) {
+      .brand-wordmark {
+        font-size: 25px;
+      }
+      .brand-subline {
+        font-size: 12px;
+      }
+    }
+
+    .topbar-cta {
+      min-height: 38px;
+      padding: 7px 14px;
+      font-size: 13px;
+    }
+
+    @media (min-width: 640px) {
+      .topbar-cta {
+        min-height: 40px;
+        padding: 8px 18px;
+      }
+    }
+
+    /* Section scaffold */
+    .section {
+      padding-block: 56px;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding-block: 84px;
+      }
+    }
+
+    .section-head {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 32px;
+      max-width: 620px;
+    }
+
+    @media (min-width: 768px) {
+      .section-head {
+        margin-bottom: 44px;
+      }
+    }
+
+    .section-kicker {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--plum-soft);
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.2vw, 2.85rem);
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      color: var(--plum);
+      text-wrap: balance;
+    }
+
+    .section-lead {
+      margin: 4px 0 0;
+      font-size: 16px;
+      color: var(--plum-soft);
+      line-height: 1.55;
+    }
+
+    /* 2. Hero */
+    .hero {
+      padding-block: 42px 56px;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding-block: 76px 88px;
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: end;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1.35fr 0.85fr;
+        gap: 64px;
+      }
+    }
+
+    .hero-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--plum);
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--sand);
+      margin-bottom: 20px;
+    }
+
+    .hero-rating-star {
+      color: var(--rose-hover);
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .hero-title {
+      margin: 0 0 18px;
+      font-family: var(--font-serif);
+      font-size: clamp(2.45rem, 6.2vw, 4.35rem);
+      font-weight: 500;
+      line-height: 1.03;
+      letter-spacing: -0.02em;
+      color: var(--plum);
+      text-wrap: balance;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .hero-copy {
+      margin: 0 0 28px;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--plum-soft);
+      max-width: 50ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-note-card {
+      border-top: 1px solid var(--plum);
+      border-bottom: 1px solid var(--sand);
+      padding-block: 22px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero-note-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--sand);
+      font-size: 14px;
+    }
+
+    .hero-note-row:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .hero-note-label {
+      color: var(--plum-soft);
+      flex-shrink: 0;
+    }
+
+    .hero-note-val {
+      color: var(--plum);
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* 3. Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-top: 1px solid var(--sand);
+      border-left: 1px solid var(--sand);
+    }
+
+    @media (min-width: 640px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 960px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 26px 22px;
+      border-right: 1px solid var(--sand);
+      border-bottom: 1px solid var(--sand);
+      background-color: var(--ivory);
+      transition: background-color 200ms var(--ease-out);
+    }
+
+    @media (min-width: 768px) {
+      .service-card {
+        padding: 32px 28px;
+      }
+    }
+
+    .service-card:hover {
+      background-color: var(--linen);
+    }
+
+    .service-top {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .service-icon-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .service-icon {
+      width: 28px;
+      height: 28px;
+      color: var(--plum);
+      flex-shrink: 0;
+    }
+
+    .service-index {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--plum-soft);
+    }
+
+    .service-name {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--plum);
+    }
+
+    .service-lines {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--plum-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .service-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--sand);
+    }
+
+    .service-price {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--plum);
+    }
+
+    .service-book-btn {
+      min-height: 40px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      background-color: transparent;
+      color: var(--plum);
+      border: 1px solid var(--sand-strong);
+      border-radius: 3px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 180ms var(--ease-out), border-color 180ms var(--ease-out), color 180ms var(--ease-out);
+    }
+
+    .service-book-btn:hover {
+      background-color: var(--rose);
+      border-color: var(--rose);
+      color: var(--plum-deep);
+    }
+
+    /* 4. Why Us (Dark Plum Band) */
+    .section-plum {
+      background-color: var(--plum);
+      color: var(--ivory);
+      border-bottom: 1px solid rgba(232, 217, 197, 0.22);
+    }
+
+    .section-plum .section-kicker {
+      color: var(--rose);
+    }
+
+    .section-plum .section-title {
+      color: var(--ivory);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      border-top: 1px solid rgba(232, 217, 197, 0.25);
+      padding-top: 28px;
+    }
+
+    @media (min-width: 768px) {
+      .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding-top: 36px;
+      }
+    }
+
+    .why-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(232, 217, 197, 0.2);
+    }
+
+    @media (min-width: 768px) {
+      .why-item {
+        padding-bottom: 0;
+        border-bottom: none;
+        padding-right: 20px;
+        border-right: 1px solid rgba(232, 217, 197, 0.2);
+      }
+      .why-item:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+
+    .why-item:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .why-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--ivory);
+    }
+
+    .why-text {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--sand);
+      letter-spacing: 0.01em;
+    }
+
+    /* 5. Gallery (True Staggered Masonry Grid) */
+    .gallery-masonry {
+      column-count: 2;
+      column-gap: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .gallery-masonry {
+        column-count: 3;
+        column-gap: 24px;
+      }
+    }
+
+    .gallery-card {
+      margin: 0 0 20px;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .gallery-card {
+        margin-bottom: 28px;
+      }
+    }
+
+    .gallery-frame {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid var(--sand);
+      border-radius: 3px;
+      background-color: var(--linen);
+    }
+
+    .gallery-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .gallery-placeholder {
+        padding: 16px;
+      }
+    }
+
+    .gallery-ratio {
+      align-self: flex-end;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--plum);
+      background-color: rgba(251, 248, 244, 0.78);
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+
+    .gallery-slot-title {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--plum);
+    }
+
+    @media (min-width: 640px) {
+      .gallery-slot-title {
+        font-size: 21px;
+      }
+    }
+
+    .gallery-caption {
+      font-size: 13px;
+      color: var(--plum-soft);
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    /* 6. Booking Form (Centrepiece) */
+    .booking-section {
+      background-color: var(--linen);
+    }
+
+    .booking-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .booking-layout {
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 56px;
+      }
+    }
+
+    .booking-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .booking-steps {
+      list-style: none;
+      margin: 8px 0 0;
+      padding: 0;
+      border-top: 1px solid var(--sand-strong);
+    }
+
+    .booking-steps li {
+      display: flex;
+      gap: 14px;
+      padding-block: 14px;
+      border-bottom: 1px solid var(--sand-strong);
+      font-size: 14px;
+      color: var(--plum);
+    }
+
+    .booking-step-num {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--plum-soft);
+      line-height: 1.25;
+      flex-shrink: 0;
+    }
+
+    .booking-panel {
+      background-color: var(--ivory);
+      border: 1px solid var(--sand-strong);
+      border-radius: 4px;
+      padding: 24px 18px;
+    }
+
+    @media (min-width: 640px) {
+      .booking-panel {
+        padding: 36px 34px;
+      }
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 640px) {
+      .form-grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--plum);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .field-optional {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--plum-soft);
+    }
+
+    .field-control {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 13px;
+      font-size: 16px;
+      color: var(--plum);
+      background-color: var(--ivory);
+      border: 1px solid var(--sand-strong);
+      border-radius: 3px;
+      transition: border-color 160ms var(--ease-out), background-color 160ms var(--ease-out);
+      appearance: none;
+    }
+
+    select.field-control {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%233B1F2B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 38px;
+    }
+
+    textarea.field-control {
+      min-height: 90px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .field-control:focus {
+      outline: none;
+      border-color: var(--plum);
+      background-color: #FFFFFF;
+    }
+
+    .field-control[aria-invalid="true"] {
+      border-color: var(--error);
+      background-color: var(--error-bg);
+    }
+
+    .field-error {
+      font-size: 13px;
+      color: var(--error);
+      min-height: 18px;
+      display: none;
+    }
+
+    .field-error.is-visible {
+      display: block;
+    }
+
+    .form-submit-row {
+      margin-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      min-height: 48px;
+      font-size: 15px;
+    }
+
+    .form-submit-btn[disabled] {
+      opacity: 0.78;
+      cursor: wait;
+    }
+
+    .form-privacy-note {
+      margin: 0;
+      font-size: 12px;
+      color: var(--plum-soft);
+      text-align: center;
+    }
+
+    /* Confirmation panel */
+    .confirmation-panel {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .confirmation-panel.is-active {
+      display: flex;
+    }
+
+    .confirmation-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--plum);
+    }
+
+    .confirmation-summary {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--sand);
+    }
+
+    .confirmation-summary li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-block: 10px;
+      border-bottom: 1px solid var(--sand);
+      font-size: 14px;
+    }
+
+    .confirmation-summary li span:first-child {
+      color: var(--plum-soft);
+      flex-shrink: 0;
+    }
+
+    .confirmation-summary li span:last-child {
+      color: var(--plum);
+      font-weight: 500;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    .confirmation-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (min-width: 520px) {
+      .confirmation-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* 7. Hours & Location */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 820px) {
+      .info-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 64px;
+      }
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-top: 1px solid var(--sand-strong);
+    }
+
+    .hours-table th,
+    .hours-table td {
+      padding: 13px 0;
+      border-bottom: 1px solid var(--sand);
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .hours-table th {
+      font-weight: 500;
+      color: var(--plum);
+    }
+
+    .hours-table td {
+      text-align: right;
+      color: var(--plum-soft);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .location-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--sand-strong);
+    }
+
+    @media (min-width: 820px) {
+      .location-block {
+        padding-top: 0;
+        border-top: none;
+        padding-left: 40px;
+        border-left: 1px solid var(--sand-strong);
+      }
+    }
+
+    .location-address {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.25;
+      color: var(--plum);
+    }
+
+    .location-landmark {
+      margin: 8px 0 0;
+      font-size: 15px;
+      color: var(--plum-soft);
+    }
+
+    /* 8. FAQ */
+    .faq-list {
+      border-top: 1px solid var(--sand-strong);
+      max-width: 780px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--sand-strong);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 0;
+      min-height: 56px;
+      background: transparent;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      color: var(--plum);
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      transition: transform 200ms var(--ease-out);
+    }
+
+    .faq-trigger[aria-expanded="true"] .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding-bottom: 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--plum-soft);
+      max-width: 64ch;
+    }
+
+    .faq-answer.is-open {
+      display: block;
+    }
+
+    /* 9. Footer */
+    .footer {
+      background-color: var(--plum);
+      color: var(--ivory);
+      padding-block: 48px 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(232, 217, 197, 0.22);
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0 0 8px;
+      color: var(--ivory);
+    }
+
+    .footer-muted {
+      margin: 0;
+      font-size: 14px;
+      color: var(--sand);
+    }
+
+    .footer-heading {
+      margin: 0 0 8px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rose);
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      font-size: 15px;
+      color: var(--ivory);
+      border-bottom: 1px solid rgba(232, 217, 197, 0.35);
+      transition: border-color 180ms var(--ease-out);
+    }
+
+    .footer-link:hover {
+      border-bottom-color: var(--rose);
+    }
+
+    .footer-bottom {
+      padding-top: 22px;
+      font-size: 13px;
+      color: var(--sand);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    /* Sticky Mobile Bottom Bar */
+    .mobile-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 45;
+      background-color: var(--ivory);
+      border-top: 1px solid var(--sand-strong);
+      padding: 8px 16px calc(8px + env(safe-area-inset-bottom, 0px));
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-bar {
+        display: none;
+      }
+    }
+
+    .mobile-bar-btn {
+      width: 100%;
+      min-height: 44px;
+    }
+
+    .is-hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1. Sticky Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand-lockup" aria-label="Waqt AlSaada Beauty Salon">
+        <span class="brand-wordmark" id="topbar-brand"></span>
+        <span class="brand-subline" id="topbar-subline"></span>
+      </a>
+      <a href="#booking-form" class="btn btn-rose topbar-cta" id="topbar-whatsapp-btn"></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 2. Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-rating tabular" id="hero-rating"></div>
+          <h1 class="hero-title" id="hero-headline"></h1>
+          <p class="hero-copy" id="hero-supporting"></p>
+          <div class="hero-actions">
+            <a href="#booking-form" class="btn btn-primary" id="hero-primary-cta"></a>
+            <a href="#services" class="btn btn-outline" id="hero-secondary-cta"></a>
+          </div>
+        </div>
+
+        <aside class="hero-note-card" aria-label="Salon quick facts">
+          <div class="hero-note-row">
+            <span class="hero-note-label" id="hero-note-area-label"></span>
+            <span class="hero-note-val" id="hero-note-area-val"></span>
+          </div>
+          <div class="hero-note-row">
+            <span class="hero-note-label" id="hero-note-landmark-label"></span>
+            <span class="hero-note-val" id="hero-note-landmark-val"></span>
+          </div>
+          <div class="hero-note-row">
+            <span class="hero-note-label" id="hero-note-service-label"></span>
+            <span class="hero-note-val" id="hero-note-service-val"></span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 3. Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" id="services-kicker"></span>
+          <h2 class="section-title" id="services-title"></h2>
+          <p class="section-lead" id="services-lead"></p>
+        </div>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. Why Us -->
+    <section class="section section-plum" id="why-us">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" id="why-kicker"></span>
+          <h2 class="section-title" id="why-title"></h2>
+        </div>
+        <div class="why-grid" id="why-grid"></div>
+      </div>
+    </section>
+
+    <!-- 5. Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" id="gallery-kicker"></span>
+          <h2 class="section-title" id="gallery-title"></h2>
+          <p class="section-lead" id="gallery-lead"></p>
+        </div>
+        <div class="gallery-masonry" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- 6. Booking Form -->
+    <section class="section booking-section" id="booking-form">
+      <div class="container booking-layout">
+        <div class="booking-aside reveal">
+          <div class="section-head" style="margin-bottom: 12px;">
+            <span class="section-kicker" id="booking-kicker"></span>
+            <h2 class="section-title" id="booking-title"></h2>
+            <p class="section-lead" id="booking-lead"></p>
+          </div>
+          <ol class="booking-steps" id="booking-steps"></ol>
+        </div>
+
+        <div class="booking-panel reveal">
+          <form id="wa-booking-form" novalidate>
+            <div class="form-grid">
+              <div class="form-grid-2">
+                <div class="field">
+                  <label class="field-label" for="client-name" id="label-name"></label>
+                  <input class="field-control" type="text" id="client-name" name="name" autocomplete="name" required />
+                  <span class="field-error" id="error-name" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label class="field-label" for="client-phone" id="label-phone"></label>
+                  <input class="field-control" type="tel" id="client-phone" name="phone" autocomplete="tel" inputmode="tel" required />
+                  <span class="field-error" id="error-phone" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="client-service" id="label-service"></label>
+                <select class="field-control" id="client-service" name="service" required></select>
+                <span class="field-error" id="error-service" role="alert"></span>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="field">
+                  <label class="field-label" for="client-date" id="label-date"></label>
+                  <input class="field-control" type="date" id="client-date" name="date" />
+                </div>
+
+                <div class="field">
+                  <label class="field-label" for="client-time" id="label-time"></label>
+                  <select class="field-control" id="client-time" name="time"></select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="client-branch" id="label-branch"></label>
+                <select class="field-control" id="client-branch" name="branch"></select>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="client-note">
+                  <span id="label-note"></span>
+                  <span class="field-optional" id="label-note-optional"></span>
+                </label>
+                <textarea class="field-control" id="client-note" name="note" rows="3"></textarea>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-rose form-submit-btn" id="submit-booking-btn"></button>
+                <p class="form-privacy-note" id="form-privacy-note"></p>
+              </div>
+            </div>
+          </form>
+
+          <div class="confirmation-panel" id="confirmation-panel" aria-live="polite">
+            <h3 class="confirmation-title" id="confirm-title"></h3>
+            <p class="section-lead" id="confirm-copy" style="margin: 0;"></p>
+            <ul class="confirmation-summary" id="confirm-summary"></ul>
+            <div class="confirmation-actions">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-rose" id="confirm-open-wa"></a>
+              <button type="button" class="btn btn-outline" id="confirm-reset-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Opening Hours & Location -->
+    <section class="section" id="hours-location">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" id="hours-kicker"></span>
+          <h2 class="section-title" id="hours-title"></h2>
+        </div>
+
+        <div class="info-grid">
+          <div class="reveal">
+            <table class="hours-table" aria-label="Salon opening hours">
+              <tbody id="hours-tbody"></tbody>
+            </table>
+          </div>
+
+          <div class="location-block reveal">
+            <div>
+              <p class="location-address" id="location-address"></p>
+              <p class="location-landmark" id="location-landmark"></p>
+            </div>
+            <div>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="directions-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" id="faq-kicker"></span>
+          <h2 class="section-title" id="faq-title"></h2>
+        </div>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand" id="footer-brand"></p>
+          <p class="footer-muted" id="footer-address"></p>
+        </div>
+        <div>
+          <p class="footer-heading" id="footer-wa-heading"></p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link tabular" id="footer-wa-link"></a>
+        </div>
+        <div>
+          <p class="footer-heading" id="footer-ig-heading"></p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link" id="footer-ig-link"></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span id="footer-ownership"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bottom Bar -->
+  <div class="mobile-bar" role="region" aria-label="Quick booking">
+    <a href="#booking-form" class="btn btn-rose mobile-bar-btn" id="mobile-bar-cta"></a>
+  </div>
+
+  <script>
+    /* =========================================================================
+       SINGLE SALON CONFIGURATION — Edit everything for Waqt AlSaada here.
+       ========================================================================= */
+    const CONFIG = {
+      salon: {
+        shortName: "Waqt AlSaada",
+        fullName: "Waqt AlSaada Beauty Salon",
+        topbarSubline: "Ladies Salon · Muwaileh, Sharjah",
+        areaShort: "Muwaileh Commercial, Sharjah",
+        landmarkShort: "Lulu Hypermarket street",
+        fullAddress: "Waqt AlSaada Beauty Salon, Lulu Hypermarket Street, Muwaileh Commercial, Sharjah, UAE",
+        landmarkNote: "Ladies-only salon on Lulu Hypermarket street in Muwaileh Commercial.",
+        mapsUrl: "https://www.google.com/maps/search/?api=1&query=Waqt+AlSaada+Beauty+Salon+Muwaileh+Commercial+Sharjah+UAE",
+        // Enter WhatsApp number with country code and digits only (no +, spaces, or dashes):
+        whatsappNumber: "971500000000",
+        whatsappDisplay: "+971 50 000 0000",
+        instagramHandle: "@waqtalsaada.salon",
+        instagramUrl: "https://www.instagram.com/"
+      },
+
+      rating: {
+        score: "4.8",
+        reviewsText: "· 277 Google reviews"
+      },
+
+      // Set a number (e.g. 120) to display "from AED 120", or keep null to display "Price on request".
+      PRICES: {
+        hair: null,
+        nails: null,
+        facials: null,
+        waxing: null,
+        threading: null,
+        makeup: null
+      },
+
+      topbar: {
+        whatsappButtonLabel: "WhatsApp"
+      },
+
+      hero: {
+        headlineBeforeItalic: "Your appointment, ",
+        headlineItalic: "booked in a minute",
+        supportingCopy: "Ladies salon on Lulu Hypermarket street for hair, nails, facials, waxing, threading, and bridal makeup.",
+        primaryCta: "Book an appointment",
+        secondaryCta: "See services",
+        quickFacts: {
+          areaLabel: "Location",
+          landmarkLabel: "Street",
+          serviceLabel: "Options",
+          serviceValue: "Salon & home service"
+        }
+      },
+
+      servicesSection: {
+        kicker: "Services",
+        title: "Treatments at the salon or at home",
+        lead: "Choose a treatment below to jump straight to the booking form with your service selected.",
+        bookButtonLabel: "Book this",
+        pricePrefix: "from AED ",
+        priceUnknown: "Price on request"
+      },
+
+      services: [
+        {
+          id: "hair",
+          name: "Hair",
+          line1: "Cuts, blow-dries, colouring, and nourishing treatments.",
+          line2: "Everyday styling or occasion finishes by female stylists.",
+          icon: "hair"
+        },
+        {
+          id: "nails",
+          name: "Nails",
+          line1: "Classic manicures, pedicures, and careful cuticle care.",
+          line2: "Clean tools and unhurried hand and foot care.",
+          icon: "nails"
+        },
+        {
+          id: "facials",
+          name: "Facials",
+          line1: "Deep cleansing, hydration, and gentle brightening care.",
+          line2: "Calm private rooms tailored to local weather.",
+          icon: "facials"
+        },
+        {
+          id: "waxing",
+          name: "Waxing",
+          line1: "Full-body, arm, leg, and underarm waxing done hygienically.",
+          line2: "Gentle formulas chosen to leave skin calm and smooth.",
+          icon: "waxing"
+        },
+        {
+          id: "threading",
+          name: "Threading",
+          line1: "Clean eyebrow shaping, upper lip, and full-face threading.",
+          line2: "Quick appointments available throughout the day.",
+          icon: "threading"
+        },
+        {
+          id: "makeup",
+          name: "Bridal & Party Makeup",
+          line1: "Soft glam, evening looks, and complete bridal preparation.",
+          line2: "Available in our Muwaileh salon or at your home.",
+          icon: "makeup"
+        }
+      ],
+
+      whyUsSection: {
+        kicker: "Why Waqt AlSaada",
+        title: "Thoughtful care without the rush"
+      },
+
+      // Keep every point under 15 words, with no invented numbers.
+      whyUs: [
+        {
+          title: "Same-day appointments",
+          text: "Message us on WhatsApp for today's openings or book ahead for the week."
+        },
+        {
+          title: "Ladies-only staff",
+          text: "Female stylists and therapists in a private, comfortable ladies-only setting."
+        },
+        {
+          title: "Home service available",
+          text: "Prefer your own home in Sharjah? Request a stylist visit when you book."
+        }
+      ],
+
+      gallerySection: {
+        kicker: "Inside the Salon",
+        title: "A look at our space and work",
+        lead: "Drop real salon photo paths into CONFIG.gallery anytime; each frame keeps its aspect ratio."
+      },
+
+      // Add a real image URL to `imageUrl` (e.g. "./images/hair.jpg") to replace any gradient frame.
+      gallery: [
+        {
+          id: "g1",
+          caption: "Hair styling & blow-dry",
+          aspectRatio: "3 / 4",
+          ratioLabel: "3:4",
+          gradient: "linear-gradient(155deg, #F4EEE6 0%, #E8D9C5 55%, #D9B7C2 100%)",
+          imageUrl: ""
+        },
+        {
+          id: "g2",
+          caption: "Brow threading & finish",
+          aspectRatio: "4 / 3",
+          ratioLabel: "4:3",
+          gradient: "linear-gradient(135deg, #F4EEE6 0%, #DFC7B0 100%)",
+          imageUrl: ""
+        },
+        {
+          id: "g3",
+          caption: "Manicure & nail care",
+          aspectRatio: "1 / 1",
+          ratioLabel: "1:1",
+          gradient: "linear-gradient(145deg, #EDE1D4 0%, #C08497 100%)",
+          imageUrl: ""
+        },
+        {
+          id: "g4",
+          caption: "Private facial room",
+          aspectRatio: "4 / 5",
+          ratioLabel: "4:5",
+          gradient: "linear-gradient(160deg, #FBF8F4 0%, #E8D9C5 100%)",
+          imageUrl: ""
+        },
+        {
+          id: "g5",
+          caption: "Bridal & evening makeup",
+          aspectRatio: "4 / 5",
+          ratioLabel: "4:5",
+          gradient: "linear-gradient(150deg, #E8D9C5 0%, #C996A7 65%, #9B6779 100%)",
+          imageUrl: ""
+        },
+        {
+          id: "g6",
+          caption: "Muwaileh salon reception",
+          aspectRatio: "1 / 1",
+          ratioLabel: "1:1",
+          gradient: "linear-gradient(165deg, #EFE5D8 0%, #D4B0BC 100%)",
+          imageUrl: ""
+        }
+      ],
+
+      bookingSection: {
+        kicker: "WhatsApp Booking",
+        title: "Book your appointment",
+        lead: "Fill in your details below. We will open WhatsApp with your request ready to send.",
+        steps: [
+          "Pick your service, date, and preferred time of day.",
+          "Tap Send on WhatsApp to open a pre-filled message.",
+          "Our reception team confirms your slot directly in chat."
+        ],
+        fields: {
+          nameLabel: "Your name",
+          namePlaceholder: "e.g. Amina Khalid",
+          nameError: "Please enter your name.",
+          phoneLabel: "WhatsApp number",
+          phonePlaceholder: "e.g. 050 123 4567",
+          phoneError: "Please enter a valid WhatsApp number.",
+          serviceLabel: "Service",
+          servicePlaceholder: "Select a service",
+          serviceError: "Please choose a service.",
+          dateLabel: "Preferred date",
+          timeLabel: "Preferred time",
+          branchLabel: "Branch",
+          noteLabel: "Note",
+          noteOptional: "Optional",
+          notePlaceholder: "Anything we should know — hair length, area for home service, or occasion date."
+        },
+        timeSlots: [
+          { value: "Morning", label: "Morning" },
+          { value: "Afternoon", label: "Afternoon" },
+          { value: "Evening", label: "Evening" }
+        ],
+        branches: [
+          { value: "Muwaileh salon", label: "Muwaileh salon" },
+          { value: "Home service", label: "Home service" }
+        ],
+        submitLabel: "Send booking request on WhatsApp",
+        openingLabel: "Opening WhatsApp...",
+        privacyNote: "No account needed and nothing is stored on this page.",
+        whatsappMessage: {
+          greetingPrefix: "Hello ",
+          introLine: "I would like to request an appointment:",
+          flexibleDate: "Flexible",
+          labels: {
+            name: "Name",
+            phone: "WhatsApp",
+            service: "Service",
+            date: "Preferred date",
+            time: "Preferred time",
+            branch: "Branch",
+            note: "Note"
+          }
+        },
+        confirmation: {
+          title: "Opening WhatsApp with your request",
+          copy: "If WhatsApp did not open automatically, tap the button below to send your booking details.",
+          openButtonLabel: "Open WhatsApp message",
+          resetButtonLabel: "Edit details"
+        }
+      },
+
+      hoursSection: {
+        kicker: "Hours & Location",
+        title: "Visit us in Muwaileh Commercial",
+        directionsLabel: "Get directions"
+      },
+
+      hours: [
+        { day: "Monday", hours: "10:00 AM – 10:00 PM" },
+        { day: "Tuesday", hours: "10:00 AM – 10:00 PM" },
+        { day: "Wednesday", hours: "10:00 AM – 10:00 PM" },
+        { day: "Thursday", hours: "10:00 AM – 10:00 PM" },
+        { day: "Friday", hours: "2:00 PM – 10:00 PM" },
+        { day: "Saturday", hours: "10:00 AM – 10:00 PM" },
+        { day: "Sunday", hours: "10:00 AM – 10:00 PM" }
+      ],
+
+      faqSection: {
+        kicker: "Common Questions",
+        title: "Before you visit"
+      },
+
+      faqs: [
+        {
+          q: "Do I need to pay a deposit when booking?",
+          a: "For any questions about deposits, message us on WhatsApp and we will confirm."
+        },
+        {
+          q: "What is your cancellation or rescheduling policy?",
+          a: "If you need to cancel or change your time, message us on WhatsApp and we will confirm."
+        },
+        {
+          q: "Do you have bridal and party makeup packages?",
+          a: "Yes, we offer bridal and party makeup at the salon or at home. For package details, message us on WhatsApp and we will confirm."
+        },
+        {
+          q: "Where is the salon on Lulu Hypermarket street?",
+          a: "We are in Muwaileh Commercial, Sharjah, on Lulu Hypermarket street. Tap Get directions above to open the route in Google Maps."
+        },
+        {
+          q: "How do I book a home service visit in Sharjah?",
+          a: "Select Home service in the booking form above, add your neighbourhood in the note box, and send your request on WhatsApp."
+        }
+      ],
+
+      footer: {
+        whatsappHeading: "WhatsApp",
+        instagramHeading: "Instagram",
+        ownershipLine: "This website and its bookings belong to Waqt AlSaada Beauty Salon."
+      },
+
+      mobileBar: {
+        ctaLabel: "Book on WhatsApp"
+      }
+    };
+
+    /* =========================================================================
+       APPLICATION LOGIC
+       ========================================================================= */
+    (function () {
+      const ICONS = {
+        hair: '<svg class="service-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="20" r="3.2"/><circle cx="20" cy="20" r="3.2"/><path d="M10.3 17.7L19 5M17.7 17.7L9 5"/></svg>',
+        nails: '<svg class="service-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10.5" y="4" width="7" height="7" rx="1"/><path d="M8 11h12l1.2 11.2A1.8 1.8 0 0 1 19.4 24H8.6a1.8 1.8 0 0 1-1.8-1.8L8 11z"/><path d="M14 14.5v5"/></svg>',
+        facials: '<svg class="service-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4C9.5 10 7 14 7 17.5a7 7 0 0 0 14 0C21 14 18.5 10 14 4z"/><path d="M11.5 18.5a2.8 2.8 0 0 0 2.8 2.8"/></svg>',
+        waxing: '<svg class="service-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 14h18a8 8 0 0 1-16 0H5z"/><path d="M9 14c1.2-3 2.8-4.5 5-4.5s3.8 1.5 5 4.5"/><path d="M18.5 5.5l4-2"/></svg>',
+        threading: '<svg class="service-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l18 12M23 8L5 20"/><path d="M7 5.5c4.5-2 9.5-2 14 0"/></svg>',
+        makeup: '<svg class="service-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="14" cy="11.5" rx="7" ry="7.5"/><path d="M10.5 9.5l3-3M14 19v5M10 24h8"/></svg>'
+      };
+
+      const el = (id) => document.getElementById(id);
+
+      function formatPrice(serviceId) {
+        const val = CONFIG.PRICES && CONFIG.PRICES[serviceId];
+        if (typeof val === "number" && !Number.isNaN(val) && val > 0) {
+          return CONFIG.servicesSection.pricePrefix + val;
+        }
+        if (typeof val === "string" && val.trim() !== "") {
+          return CONFIG.servicesSection.pricePrefix + val.trim();
+        }
+        return CONFIG.servicesSection.priceUnknown;
+      }
+
+      function buildDirectWaLink(messageText) {
+        const digits = String(CONFIG.salon.whatsappNumber || "").replace(/\D/g, "");
+        const base = "https://wa.me/" + digits;
+        return messageText ? base + "?text=" + encodeURIComponent(messageText) : base;
+      }
+
+      function renderHeaderAndHero() {
+        el("topbar-brand").textContent = CONFIG.salon.shortName;
+        el("topbar-subline").textContent = CONFIG.salon.topbarSubline;
+        el("topbar-whatsapp-btn").textContent = CONFIG.topbar.whatsappButtonLabel;
+
+        const ratingEl = el("hero-rating");
+        ratingEl.textContent = "";
+        ratingEl.appendChild(document.createTextNode(CONFIG.rating.score + " "));
+        const star = document.createElement("span");
+        star.className = "hero-rating-star";
+        star.setAttribute("aria-hidden", "true");
+        star.textContent = "★";
+        ratingEl.appendChild(star);
+        ratingEl.appendChild(document.createTextNode(" " + CONFIG.rating.reviewsText));
+
+        const headlineEl = el("hero-headline");
+        headlineEl.textContent = "";
+        headlineEl.appendChild(document.createTextNode(CONFIG.hero.headlineBeforeItalic));
+        const em = document.createElement("em");
+        em.textContent = CONFIG.hero.headlineItalic;
+        headlineEl.appendChild(em);
+
+        el("hero-supporting").textContent = CONFIG.hero.supportingCopy;
+        el("hero-primary-cta").textContent = CONFIG.hero.primaryCta;
+        el("hero-secondary-cta").textContent = CONFIG.hero.secondaryCta;
+
+        el("hero-note-area-label").textContent = CONFIG.hero.quickFacts.areaLabel;
+        el("hero-note-area-val").textContent = CONFIG.salon.areaShort;
+        el("hero-note-landmark-label").textContent = CONFIG.hero.quickFacts.landmarkLabel;
+        el("hero-note-landmark-val").textContent = CONFIG.salon.landmarkShort;
+        el("hero-note-service-label").textContent = CONFIG.hero.quickFacts.serviceLabel;
+        el("hero-note-service-val").textContent = CONFIG.hero.quickFacts.serviceValue;
+      }
+
+      function renderServices() {
+        el("services-kicker").textContent = CONFIG.servicesSection.kicker;
+        el("services-title").textContent = CONFIG.servicesSection.title;
+        el("services-lead").textContent = CONFIG.servicesSection.lead;
+
+        const grid = el("services-grid");
+        grid.innerHTML = "";
+
+        CONFIG.services.forEach((service, idx) => {
+          const card = document.createElement("article");
+          card.className = "service-card reveal";
+
+          const top = document.createElement("div");
+          top.className = "service-top";
+
+          const iconRow = document.createElement("div");
+          iconRow.className = "service-icon-row";
+          iconRow.innerHTML = ICONS[service.icon] || "";
+
+          const indexSpan = document.createElement("span");
+          indexSpan.className = "service-index tabular";
+          indexSpan.textContent = String(idx + 1).padStart(2, "0");
+          iconRow.appendChild(indexSpan);
+
+          const title = document.createElement("h3");
+          title.className = "service-name";
+          title.textContent = service.name;
+
+          const lines = document.createElement("p");
+          lines.className = "service-lines";
+          const l1 = document.createElement("span");
+          l1.textContent = service.line1;
+          const l2 = document.createElement("span");
+          l2.textContent = service.line2;
+          lines.appendChild(l1);
+          lines.appendChild(l2);
+
+          top.appendChild(iconRow);
+          top.appendChild(title);
+          top.appendChild(lines);
+
+          const footer = document.createElement("div");
+          footer.className = "service-footer";
+
+          const price = document.createElement("span");
+          price.className = "service-price tabular";
+          price.textContent = formatPrice(service.id);
+
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "service-book-btn";
+          btn.textContent = CONFIG.servicesSection.bookButtonLabel;
+          btn.addEventListener("click", function () {
+            selectServiceAndScroll(service.name);
+          });
+
+          footer.appendChild(price);
+          footer.appendChild(btn);
+
+          card.appendChild(top);
+          card.appendChild(footer);
+          grid.appendChild(card);
+        });
+      }
+
+      function renderWhyUs() {
+        el("why-kicker").textContent = CONFIG.whyUsSection.kicker;
+        el("why-title").textContent = CONFIG.whyUsSection.title;
+
+        const grid = el("why-grid");
+        grid.innerHTML = "";
+
+        CONFIG.whyUs.forEach((point) => {
+          const item = document.createElement("div");
+          item.className = "why-item reveal";
+
+          const h3 = document.createElement("h3");
+          h3.className = "why-title";
+          h3.textContent = point.title;
+
+          const p = document.createElement("p");
+          p.className = "why-text";
+          p.textContent = point.text;
+
+          item.appendChild(h3);
+          item.appendChild(p);
+          grid.appendChild(item);
+        });
+      }
+
+      function renderGallery() {
+        el("gallery-kicker").textContent = CONFIG.gallerySection.kicker;
+        el("gallery-title").textContent = CONFIG.gallerySection.title;
+        el("gallery-lead").textContent = CONFIG.gallerySection.lead;
+
+        const grid = el("gallery-grid");
+        grid.innerHTML = "";
+
+        CONFIG.gallery.forEach((item) => {
+          const fig = document.createElement("figure");
+          fig.className = "gallery-card reveal";
+
+          const frame = document.createElement("div");
+          frame.className = "gallery-frame";
+          frame.style.aspectRatio = item.aspectRatio;
+
+          if (item.imageUrl && item.imageUrl.trim() !== "") {
+            const img = document.createElement("img");
+            img.src = item.imageUrl;
+            img.alt = item.caption;
+            img.loading = "lazy";
+            frame.appendChild(img);
+          } else {
+            const placeholder = document.createElement("div");
+            placeholder.className = "gallery-placeholder";
+            placeholder.style.background = item.gradient;
+
+            const ratio = document.createElement("span");
+            ratio.className = "gallery-ratio tabular";
+            ratio.textContent = item.ratioLabel;
+
+            const slotTitle = document.createElement("span");
+            slotTitle.className = "gallery-slot-title";
+            slotTitle.textContent = item.caption;
+
+            placeholder.appendChild(ratio);
+            placeholder.appendChild(slotTitle);
+            frame.appendChild(placeholder);
+          }
+
+          const cap = document.createElement("figcaption");
+          cap.className = "gallery-caption";
+          const capText = document.createElement("span");
+          capText.textContent = item.caption;
+          const capRatio = document.createElement("span");
+          capRatio.className = "tabular";
+          capRatio.textContent = item.ratioLabel;
+          cap.appendChild(capText);
+          cap.appendChild(capRatio);
+
+          fig.appendChild(frame);
+          fig.appendChild(cap);
+          grid.appendChild(fig);
+        });
+      }
+
+      function renderBookingForm() {
+        const b = CONFIG.bookingSection;
+        el("booking-kicker").textContent = b.kicker;
+        el("booking-title").textContent = b.title;
+        el("booking-lead").textContent = b.lead;
+
+        const stepsList = el("booking-steps");
+        stepsList.innerHTML = "";
+        b.steps.forEach((step, idx) => {
+          const li = document.createElement("li");
+          const num = document.createElement("span");
+          num.className = "booking-step-num tabular";
+          num.textContent = String(idx + 1).padStart(2, "0");
+          const txt = document.createElement("span");
+          txt.textContent = step;
+          li.appendChild(num);
+          li.appendChild(txt);
+          stepsList.appendChild(li);
+        });
+
+        el("label-name").textContent = b.fields.nameLabel;
+        el("client-name").placeholder = b.fields.namePlaceholder;
+
+        el("label-phone").textContent = b.fields.phoneLabel;
+        el("client-phone").placeholder = b.fields.phonePlaceholder;
+
+        el("label-service").textContent = b.fields.serviceLabel;
+        const serviceSelect = el("client-service");
+        serviceSelect.innerHTML = "";
+        const defaultOpt = document.createElement("option");
+        defaultOpt.value = "";
+        defaultOpt.textContent = b.fields.servicePlaceholder;
+        serviceSelect.appendChild(defaultOpt);
+        CONFIG.services.forEach((s) => {
+          const opt = document.createElement("option");
+          opt.value = s.name;
+          opt.textContent = s.name;
+          serviceSelect.appendChild(opt);
+        });
+
+        el("label-date").textContent = b.fields.dateLabel;
+        const dateInput = el("client-date");
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, "0");
+        const dd = String(today.getDate()).padStart(2, "0");
+        const todayStr = yyyy + "-" + mm + "-" + dd;
+        dateInput.min = todayStr;
+        dateInput.value = todayStr;
+
+        el("label-time").textContent = b.fields.timeLabel;
+        const timeSelect = el("client-time");
+        timeSelect.innerHTML = "";
+        b.timeSlots.forEach((slot) => {
+          const opt = document.createElement("option");
+          opt.value = slot.value;
+          opt.textContent = slot.label;
+          timeSelect.appendChild(opt);
+        });
+
+        el("label-branch").textContent = b.fields.branchLabel;
+        const branchSelect = el("client-branch");
+        branchSelect.innerHTML = "";
+        b.branches.forEach((branch) => {
+          const opt = document.createElement("option");
+          opt.value = branch.value;
+          opt.textContent = branch.label;
+          branchSelect.appendChild(opt);
+        });
+
+        el("label-note").textContent = b.fields.noteLabel;
+        el("label-note-optional").textContent = b.fields.noteOptional;
+        el("client-note").placeholder = b.fields.notePlaceholder;
+
+        el("submit-booking-btn").textContent = b.submitLabel;
+        el("form-privacy-note").textContent = b.privacyNote;
+
+        el("confirm-title").textContent = b.confirmation.title;
+        el("confirm-copy").textContent = b.confirmation.copy;
+        el("confirm-open-wa").textContent = b.confirmation.openButtonLabel;
+        el("confirm-reset-btn").textContent = b.confirmation.resetButtonLabel;
+      }
+
+      function renderHoursAndLocation() {
+        el("hours-kicker").textContent = CONFIG.hoursSection.kicker;
+        el("hours-title").textContent = CONFIG.hoursSection.title;
+
+        const tbody = el("hours-tbody");
+        tbody.innerHTML = "";
+        CONFIG.hours.forEach((row) => {
+          const tr = document.createElement("tr");
+          const th = document.createElement("th");
+          th.scope = "row";
+          th.textContent = row.day;
+          const td = document.createElement("td");
+          td.textContent = row.hours;
+          tr.appendChild(th);
+          tr.appendChild(td);
+          tbody.appendChild(tr);
+        });
+
+        el("location-address").textContent = CONFIG.salon.fullAddress;
+        el("location-landmark").textContent = CONFIG.salon.landmarkNote;
+
+        const dirLink = el("directions-link");
+        dirLink.textContent = CONFIG.hoursSection.directionsLabel;
+        dirLink.href = CONFIG.salon.mapsUrl;
+      }
+
+      function renderFaq() {
+        el("faq-kicker").textContent = CONFIG.faqSection.kicker;
+        el("faq-title").textContent = CONFIG.faqSection.title;
+
+        const list = el("faq-list");
+        list.innerHTML = "";
+
+        CONFIG.faqs.forEach((item, idx) => {
+          const wrap = document.createElement("div");
+          wrap.className = "faq-item reveal";
+
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "faq-trigger";
+          btn.setAttribute("aria-expanded", "false");
+          btn.setAttribute("aria-controls", "faq-ans-" + idx);
+
+          const qSpan = document.createElement("span");
+          qSpan.textContent = item.q;
+
+          const iconWrap = document.createElement("span");
+          iconWrap.innerHTML = '<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+
+          btn.appendChild(qSpan);
+          btn.appendChild(iconWrap.firstChild);
+
+          const ans = document.createElement("div");
+          ans.className = "faq-answer";
+          ans.id = "faq-ans-" + idx;
+          ans.textContent = item.a;
+
+          btn.addEventListener("click", function () {
+            const isOpen = btn.getAttribute("aria-expanded") === "true";
+            btn.setAttribute("aria-expanded", String(!isOpen));
+            ans.classList.toggle("is-open", !isOpen);
+          });
+
+          wrap.appendChild(btn);
+          wrap.appendChild(ans);
+          list.appendChild(wrap);
+        });
+      }
+
+      function renderFooterAndMobileBar() {
+        el("footer-brand").textContent = CONFIG.salon.fullName;
+        el("footer-address").textContent = CONFIG.salon.areaShort;
+
+        el("footer-wa-heading").textContent = CONFIG.footer.whatsappHeading;
+        const waLink = el("footer-wa-link");
+        waLink.textContent = CONFIG.salon.whatsappDisplay;
+        waLink.href = buildDirectWaLink("");
+
+        el("footer-ig-heading").textContent = CONFIG.footer.instagramHeading;
+        const igLink = el("footer-ig-link");
+        igLink.textContent = CONFIG.salon.instagramHandle;
+        igLink.href = CONFIG.salon.instagramUrl;
+
+        el("footer-ownership").textContent = CONFIG.footer.ownershipLine;
+        el("mobile-bar-cta").textContent = CONFIG.mobileBar.ctaLabel;
+      }
+
+      function selectServiceAndScroll(serviceName) {
+        const form = el("wa-booking-form");
+        const panel = el("confirmation-panel");
+        form.classList.remove("is-hidden");
+        panel.classList.remove("is-active");
+
+        const select = el("client-service");
+        select.value = serviceName;
+        clearFieldError(select, el("error-service"));
+
+        const target = el("booking-form");
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(function () {
+          el("client-name").focus({ preventScroll: true });
+        }, 450);
+      }
+
+      function setFieldError(inputEl, errorEl, message) {
+        inputEl.setAttribute("aria-invalid", "true");
+        errorEl.textContent = message;
+        errorEl.classList.add("is-visible");
+      }
+
+      function clearFieldError(inputEl, errorEl) {
+        inputEl.removeAttribute("aria-invalid");
+        errorEl.textContent = "";
+        errorEl.classList.remove("is-visible");
+      }
+
+      function setupForm() {
+        const form = el("wa-booking-form");
+        const nameInput = el("client-name");
+        const phoneInput = el("client-phone");
+        const serviceInput = el("client-service");
+        const dateInput = el("client-date");
+        const timeInput = el("client-time");
+        const branchInput = el("client-branch");
+        const noteInput = el("client-note");
+
+        const nameErr = el("error-name");
+        const phoneErr = el("error-phone");
+        const serviceErr = el("error-service");
+
+        const submitBtn = el("submit-booking-btn");
+        const confirmPanel = el("confirmation-panel");
+        const confirmSummary = el("confirm-summary");
+        const confirmOpenWa = el("confirm-open-wa");
+        const confirmResetBtn = el("confirm-reset-btn");
+
+        nameInput.addEventListener("input", () => clearFieldError(nameInput, nameErr));
+        phoneInput.addEventListener("input", () => clearFieldError(phoneInput, phoneErr));
+        serviceInput.addEventListener("change", () => clearFieldError(serviceInput, serviceErr));
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const b = CONFIG.bookingSection;
+          const msgCfg = b.whatsappMessage;
+          const lbl = msgCfg.labels;
+
+          const nameVal = nameInput.value.trim();
+          const phoneVal = phoneInput.value.trim();
+          const phoneDigits = phoneVal.replace(/\D/g, "");
+          const serviceVal = serviceInput.value.trim();
+          const dateVal = dateInput.value.trim() || msgCfg.flexibleDate;
+          const timeVal = timeInput.value;
+          const branchVal = branchInput.value;
+          const noteVal = noteInput.value.trim();
+
+          let firstInvalid = null;
+
+          if (!nameVal) {
+            setFieldError(nameInput, nameErr, b.fields.nameError);
+            firstInvalid = firstInvalid || nameInput;
+          } else {
+            clearFieldError(nameInput, nameErr);
+          }
+
+          if (phoneDigits.length < 7) {
+            setFieldError(phoneInput, phoneErr, b.fields.phoneError);
+            firstInvalid = firstInvalid || phoneInput;
+          } else {
+            clearFieldError(phoneInput, phoneErr);
+          }
+
+          if (!serviceVal) {
+            setFieldError(serviceInput, serviceErr, b.fields.serviceError);
+            firstInvalid = firstInvalid || serviceInput;
+          } else {
+            clearFieldError(serviceInput, serviceErr);
+          }
+
+          if (firstInvalid) {
+            firstInvalid.focus();
+            return;
+          }
+
+          const messageLines = [
+            msgCfg.greetingPrefix + CONFIG.salon.fullName + ",",
+            msgCfg.introLine,
+            "",
+            lbl.name + ": " + nameVal,
+            lbl.phone + ": " + phoneVal,
+            lbl.service + ": " + serviceVal,
+            lbl.date + ": " + dateVal,
+            lbl.time + ": " + timeVal,
+            lbl.branch + ": " + branchVal
+          ];
+
+          if (noteVal) {
+            messageLines.push(lbl.note + ": " + noteVal);
+          }
+
+          const waUrl = buildDirectWaLink(messageLines.join("\n"));
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = b.openingLabel;
+
+          setTimeout(function () {
+            confirmSummary.innerHTML = "";
+            const rows = [
+              [lbl.name, nameVal],
+              [lbl.phone, phoneVal],
+              [lbl.service, serviceVal],
+              [lbl.date, dateVal],
+              [lbl.time, timeVal],
+              [lbl.branch, branchVal]
+            ];
+            if (noteVal) {
+              rows.push([lbl.note, noteVal]);
+            }
+
+            rows.forEach(function (pair) {
+              const li = document.createElement("li");
+              const k = document.createElement("span");
+              k.textContent = pair[0];
+              const v = document.createElement("span");
+              v.textContent = pair[1];
+              li.appendChild(k);
+              li.appendChild(v);
+              confirmSummary.appendChild(li);
+            });
+
+            confirmOpenWa.href = waUrl;
+
+            const tempLink = document.createElement("a");
+            tempLink.href = waUrl;
+            tempLink.target = "_blank";
+            tempLink.rel = "noopener noreferrer";
+            document.body.appendChild(tempLink);
+            tempLink.click();
+            document.body.removeChild(tempLink);
+
+            form.classList.add("is-hidden");
+            confirmPanel.classList.add("is-active");
+            submitBtn.disabled = false;
+            submitBtn.textContent = b.submitLabel;
+          }, 480);
+        });
+
+        confirmResetBtn.addEventListener("click", function () {
+          confirmPanel.classList.remove("is-active");
+          form.classList.remove("is-hidden");
+          nameInput.focus();
+        });
+      }
+
+      function setupScrollReveal() {
+        const targets = document.querySelectorAll(".reveal");
+        if (!("IntersectionObserver" in window)) {
+          targets.forEach((node) => node.classList.add("is-visible"));
+          return;
+        }
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: "0px 0px -24px 0px" }
+        );
+        targets.forEach((node) => observer.observe(node));
+      }
+
+      renderHeaderAndHero();
+      renderServices();
+      renderWhyUs();
+      renderGallery();
+      renderBookingForm();
+      renderHoursAndLocation();
+      renderFaq();
+      renderFooterAndMobileBar();
+      setupForm();
+      setupScrollReveal();
+    })();
+  </script>
+</body>
+</html>
